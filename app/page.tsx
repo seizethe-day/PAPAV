@@ -61,7 +61,11 @@ export default function Home() {
           <p className="eyebrow"><span /> Capability-centric survey · 2026</p>
           <HeroCapabilityLogo capabilities={capabilities} />
           <h1>
-            <span className="title-rest">When Agents Enter the Physical World:<br />A Capability-Centric Survey of<br />Multimodal Embodied Agents</span>
+            <span className="title-rest">
+              When Agents Enter the <span className="keep-together">Physical World:</span>{' '}
+              A <span className="keep-together">Capability-Centric</span> Survey of Multimodal{' '}
+              <span className="keep-together">Embodied Agents</span>
+            </span>
           </h1>
           <p className="hero-deck">
             A unified lens for understanding how multimodal agents perceive,
@@ -86,7 +90,7 @@ export default function Home() {
       <section className="intro-section" id="framework">
         <div className="section-kicker">The PAPAV framework</div>
         <div className="intro-grid">
-          <h2>One coordinate system.<br />Three agent traditions.</h2>
+          <h2>One coordinate system. Three agent traditions.</h2>
           <p>
             PAPAV abstracts recurring input-output relations into five capabilities,
             making it possible to compare multimodal agents, robotic systems, and
@@ -112,7 +116,7 @@ export default function Home() {
       <section className="domains-section" aria-labelledby="domains-title">
         <div className="domains-copy">
           <p className="section-kicker">Across digital and physical worlds</p>
-          <h2 id="domains-title">A common function.<br />Different constraints.</h2>
+          <h2 id="domains-title">A common function. Different constraints.</h2>
           <p>Digital agents, robotic systems, and multimodal embodied agents can instantiate similar capability relations while operating under very different evidence, action, and verification conditions.</p>
           <div className="domain-list">
             <div><span>01</span><strong>Multimodal agents</strong><small>Tool calls · GUI actions · digital feedback</small></div>
@@ -127,7 +131,7 @@ export default function Home() {
         <div className="benchmark-intro">
           <div>
             <p className="section-kicker">Benchmarks & evaluation</p>
-            <h2 id="benchmarks-title">Coverage is broad.<br />Diagnosis is not.</h2>
+            <h2 id="benchmarks-title">Coverage is broad. Diagnosis is not.</h2>
           </div>
           <div className="benchmark-intro-copy">
             <p>The survey maps 62 benchmarks across three research families. Most evaluation still emphasizes aggregate outcomes, leaving capability bottlenecks and failure transitions difficult to identify.</p>

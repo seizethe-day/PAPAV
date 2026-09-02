@@ -13,32 +13,38 @@ const comparisons: Array<{
   letter: string;
   name: string;
   color: string;
+  leftNote?: string;
+  rightNote?: string;
   left: [Flow, Flow];
   shared: { image: string; title: string; detail: string };
   right: [Flow, Flow];
 }> = [
   {
     letter: 'P', name: 'Perceive', color: '#E85F52',
+    leftNote: 'Digital evidence → physical evidence',
+    rightNote: 'Supplied sensing → task-formed inquiry',
     left: [
-      { code: 'MMA', input: ['ppt-icons/image6.png', 'Inspect / query'], output: ['ppt-icons/image7.png', 'Digital evidence'], caption: 'Digital evidence inquiry' },
-      { code: 'MMEA', input: ['ppt-icons/image8.png', 'Inspect / query'], output: ['ppt-icons/image9.png', 'Physical evidence'], caption: 'Physical evidence inquiry' },
+      { code: 'MMA', input: ['ppt-icons/image6.png', 'Inspect / Query'], output: ['ppt-icons/image7.png', 'Digital Evidence'], caption: 'Digital Evidence Inquiry' },
+      { code: 'MMEA', input: ['ppt-icons/image8.png', 'Inspect / Query'], output: ['ppt-icons/image9.png', 'Physical Evidence'], caption: 'Physical Evidence Inquiry' },
     ],
-    shared: { image: 'ppt-icons/image51.png', title: 'Multimodal evidence grounding', detail: 'All three traditions integrate heterogeneous observations into an actionable state.' },
+    shared: { image: 'ppt-icons/image51.png', title: 'Multimodal Evidence Grounding', detail: 'All three traditions integrate heterogeneous observations into an actionable state.' },
     right: [
-      { code: 'MMEA', input: ['ppt-icons/image15.png', 'Evidence gap'], output: ['ppt-icons/image16.png', 'Perceptual autoselection'], caption: 'Task-formed inquiry' },
-      { code: 'ROBOTICS', input: ['ppt-icons/image17.png', 'External percept target'], output: ['ppt-icons/image18.png', 'Targeted measurement'], caption: 'Supplied sensing goal' },
+      { code: 'MMEA', input: ['ppt-icons/image15.png', 'Evidence Gap'], output: ['ppt-icons/image16.png', 'Perceptual Autoselection'], caption: 'Task-Formed Inquiry' },
+      { code: 'ROBOTICS', input: ['ppt-icons/image17.png', 'External Percept Target'], output: ['ppt-icons/image18.png', 'Targeted Measurement'], caption: 'Supplied Sensing Goal' },
     ],
   },
   {
     letter: 'A', name: 'Anticipate', color: '#D88A2D',
+    leftNote: 'Rule-bounded → risk-qualified futures',
+    rightNote: 'Control-scoped → task-selected counterfactuals',
     left: [
-      { code: 'MMA', input: ['ppt-icons/image11.png', 'Software intervention'], output: ['ppt-icons/image12.png', 'Rule-bounded future'], caption: 'Rule-bounded forecasts' },
-      { code: 'MMEA', input: ['ppt-icons/image13.png', 'Physical intervention'], output: ['ppt-icons/image14.png', 'Risk-qualified future'], caption: 'Qualified physical forecasts' },
+      { code: 'MMA', input: ['ppt-icons/image11.png', 'Software Intervention'], output: ['ppt-icons/image12.png', 'Rule-Bounded Future'], caption: 'Rule-Bounded Forecasts' },
+      { code: 'MMEA', input: ['ppt-icons/image13.png', 'Physical Intervention'], output: ['ppt-icons/image14.png', 'Risk-Qualified Future'], caption: 'Qualified Physical Forecasts' },
     ],
-    shared: { image: 'ppt-icons/image50.png', title: 'State-transition forecasting', detail: 'Each system models how a candidate intervention may change the environment.' },
+    shared: { image: 'ppt-icons/image50.png', title: 'State-Transition Forecasting', detail: 'Each system models how a candidate intervention may change the environment.' },
     right: [
-      { code: 'MMEA', input: ['ppt-icons/image19.png', 'Task forecast need'], output: ['ppt-icons/image20.png', 'Task-relevant futures'], caption: 'Task-selected counterfactuals' },
-      { code: 'ROBOTICS', input: ['ppt-icons/image21.png', 'Control objective'], output: ['ppt-icons/image22.png', 'Predicted trajectories'], caption: 'Control-scoped counterfactuals' },
+      { code: 'MMEA', input: ['ppt-icons/image19.png', 'Task Forecast Need'], output: ['ppt-icons/image20.png', 'Task-Relevant Futures'], caption: 'Task-Selected Counterfactuals' },
+      { code: 'ROBOTICS', input: ['ppt-icons/image21.png', 'Control Objective'], output: ['ppt-icons/image22.png', 'Predicted Trajectories'], caption: 'Control-Scoped Counterfactuals' },
     ],
   },
   {
@@ -88,7 +94,7 @@ export default function SimilarityDifference() {
       <div className="comparison-heading">
         <div>
           <p className="section-kicker">Similarity × Difference</p>
-          <h2 id="comparison-title">One shared relation.<br />Two boundaries.</h2>
+          <h2 id="comparison-title">One shared relation. Two boundaries.</h2>
         </div>
         <p>The center isolates the capability shared by MMA, MMEA, and robotic systems. The two sides show exactly how MMEA departs from each neighboring tradition.</p>
       </div>
@@ -111,7 +117,7 @@ export default function SimilarityDifference() {
       </div>
 
       <div className="triptych-visual" key={item.name} style={{ '--capability': item.color } as CSSProperties}>
-        <ComparisonColumn label="Difference from MMA" note="Digital → physical evidence and action" flows={item.left} side="left" />
+        <ComparisonColumn label="Difference from MMA" note={item.leftNote ?? 'Digital → physical evidence and action'} flows={item.left} side="left" />
 
         <article className="shared-capability">
           <header><span>Similarity</span><strong>Shared capability</strong></header>
@@ -121,7 +127,7 @@ export default function SimilarityDifference() {
           <p>{item.shared.detail}</p>
         </article>
 
-        <ComparisonColumn label="Difference from Robotics" note="Supplied control → task-formed agency" flows={item.right} side="right" />
+        <ComparisonColumn label="Difference from Robotics" note={item.rightNote ?? 'Supplied control → task-formed agency'} flows={item.right} side="right" />
       </div>
 
       <div className="triptych-reading" aria-label="How to read the comparison">
