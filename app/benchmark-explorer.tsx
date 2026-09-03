@@ -104,7 +104,7 @@ export default function BenchmarkExplorer() {
         <div className="benchmark-tabs" aria-label="Benchmark category">
           {(['ALL', 'MMEA', 'MMA', 'RS'] as CategoryFilter[]).map((item) => (
             <button key={item} type="button" className={category === item ? 'active' : ''} onClick={() => chooseCategory(item)} aria-pressed={category === item}>
-              {item === 'ALL' ? 'All 62' : categoryLabels[item]}
+              {item === 'ALL' ? 'All' : categoryLabels[item]}
             </button>
           ))}
         </div>

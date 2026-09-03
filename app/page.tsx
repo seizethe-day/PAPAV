@@ -117,11 +117,11 @@ export default function Home() {
         <div className="domains-copy">
           <p className="section-kicker">Across digital and physical worlds</p>
           <h2 id="domains-title">A common function. Different constraints.</h2>
-          <p>Digital agents, robotic systems, and multimodal embodied agents can instantiate similar capability relations while operating under very different evidence, action, and verification conditions.</p>
+          <p>Robotic systems, multimodal embodied agents, and multimodal agents can instantiate similar capability relations while operating under very different evidence, action, and verification conditions.</p>
           <div className="domain-list">
-            <div><span>01</span><strong>Multimodal agents</strong><small>Tool calls · GUI actions · digital feedback</small></div>
-            <div><span>02</span><strong>Robotic systems</strong><small>Sensors · control signals · physical state</small></div>
-            <div><span>03</span><strong>MM embodied agents</strong><small>Agentic reasoning under embodied constraints</small></div>
+            <div><span>01</span><strong>Robotic systems</strong><small>Sensors · control signals · physical state</small></div>
+            <div><span>02</span><strong>MM embodied agents</strong><small>Agentic reasoning under embodied constraints</small></div>
+            <div><span>03</span><strong>Multimodal agents</strong><small>Tool calls · GUI actions · digital feedback</small></div>
           </div>
         </div>
         <EvolutionTree />
