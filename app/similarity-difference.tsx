@@ -24,13 +24,13 @@ const comparisons: Array<{
     leftNote: 'Digital evidence → physical evidence',
     rightNote: 'Supplied sensing → task-formed inquiry',
     left: [
-      { code: 'MMA', input: ['ppt-icons/image6.png', 'Inspect / Query'], output: ['ppt-icons/image7.png', 'Digital Evidence'], caption: 'Digital Evidence Inquiry' },
-      { code: 'MMEA', input: ['ppt-icons/image8.png', 'Inspect / Query'], output: ['ppt-icons/image9.png', 'Physical Evidence'], caption: 'Physical Evidence Inquiry' },
+      { code: 'MMA', input: ['ppt-icons/image6.png', 'Inspect or Query'], output: ['ppt-icons/image7.png', 'Digital Evidence'], caption: 'Digital Evidence Inquiry' },
+      { code: 'MMEA', input: ['ppt-icons/image8.png', 'Inspect or Query'], output: ['ppt-icons/image9.png', 'Physical Evidence'], caption: 'Physical Evidence Inquiry' },
     ],
     shared: { image: 'ppt-icons/image51.png', title: 'Multimodal Evidence Grounding', detail: 'All three traditions integrate heterogeneous observations into an actionable state.' },
     right: [
-      { code: 'MMEA', input: ['ppt-icons/image15.png', 'Evidence Gap'], output: ['ppt-icons/image16.png', 'Perceptual Autoselection'], caption: 'Task-Formed Inquiry' },
-      { code: 'ROBOTICS', input: ['ppt-icons/image17.png', 'External Percept Target'], output: ['ppt-icons/image18.png', 'Targeted Measurement'], caption: 'Supplied Sensing Goal' },
+      { code: 'MMEA', input: ['ppt-icons/image15.png', 'Evidence Gap'], output: ['ppt-icons/image16.png', 'Automatic Sensor Selection'], caption: 'Task-Formed Inquiry' },
+      { code: 'ROBOTICS', input: ['ppt-icons/image17.png', 'External Sensing Target'], output: ['ppt-icons/image18.png', 'Targeted Measurement'], caption: 'Supplied Sensing Goal' },
     ],
   },
   {
@@ -43,44 +43,44 @@ const comparisons: Array<{
     ],
     shared: { image: 'ppt-icons/image50.png', title: 'State-Transition Forecasting', detail: 'Each system models how a candidate intervention may change the environment.' },
     right: [
-      { code: 'MMEA', input: ['ppt-icons/image19.png', 'Task Forecast Need'], output: ['ppt-icons/image20.png', 'Task-Relevant Futures'], caption: 'Task-Selected Counterfactuals' },
+      { code: 'MMEA', input: ['ppt-icons/image19.png', 'Task Forecast Requirement'], output: ['ppt-icons/image20.png', 'Task-Relevant Futures'], caption: 'Task-Selected Counterfactuals' },
       { code: 'ROBOTICS', input: ['ppt-icons/image21.png', 'Control Objective'], output: ['ppt-icons/image22.png', 'Predicted Trajectories'], caption: 'Control-Scoped Counterfactuals' },
     ],
   },
   {
     letter: 'P', name: 'Plan', color: '#3A9A87',
     left: [
-      { code: 'MMA', input: ['ppt-icons/image24.png', 'Digital checkpoint'], output: ['ppt-icons/image23.png', 'Reversible plan'], caption: 'Snapshot-backed planning' },
-      { code: 'MMEA', input: ['ppt-icons/image25.png', 'Altered physical state'], output: ['ppt-icons/image26.png', 'Contingency plan'], caption: 'Changed-state planning' },
+      { code: 'MMA', input: ['ppt-icons/image24.png', 'Digital Checkpoint'], output: ['ppt-icons/image23.png', 'Reversible Plan'], caption: 'Snapshot-Backed Planning' },
+      { code: 'MMEA', input: ['ppt-icons/image25.png', 'Altered Physical State'], output: ['ppt-icons/image26.png', 'Contingency Plan'], caption: 'Changed-State Planning' },
     ],
-    shared: { image: 'ppt-icons/image52.png', title: 'Constraint-aware planning', detail: 'All three propose and select a course under goals, affordances, and constraints.' },
+    shared: { image: 'ppt-icons/image52.png', title: 'Constraint-Aware Planning', detail: 'All three propose and select a course under goals, affordances, and constraints.' },
     right: [
-      { code: 'MMEA', input: ['ppt-icons/image27.png', 'Task failure context'], output: ['ppt-icons/image28.png', 'Revised task course'], caption: 'Task-level recovery' },
-      { code: 'ROBOTICS', input: ['ppt-icons/image29.png', 'Local skill failure'], output: ['ppt-icons/image30.png', 'Revised skill course'], caption: 'Skill-level recovery' },
+      { code: 'MMEA', input: ['ppt-icons/image27.png', 'Task Failure Context'], output: ['ppt-icons/image28.png', 'Revised Task Course'], caption: 'Task-Level Recovery' },
+      { code: 'ROBOTICS', input: ['ppt-icons/image29.png', 'Local Skill Failure'], output: ['ppt-icons/image30.png', 'Revised Skill Course'], caption: 'Skill-Level Recovery' },
     ],
   },
   {
     letter: 'A', name: 'Act', color: '#347FB8',
     left: [
-      { code: 'MMA', input: ['ppt-icons/image31.png', 'Semantic intent'], output: ['ppt-icons/image32.png', 'Interface event'], caption: 'Interface-level actions' },
-      { code: 'MMEA', input: ['ppt-icons/image33.png', 'Semantic intent'], output: ['ppt-icons/image34.png', 'Physical execution'], caption: 'Body-grounded actions' },
+      { code: 'MMA', input: ['ppt-icons/image31.png', 'Semantic Intent'], output: ['ppt-icons/image32.png', 'Interface Event'], caption: 'Interface-Level Actions' },
+      { code: 'MMEA', input: ['ppt-icons/image33.png', 'Semantic Intent'], output: ['ppt-icons/image34.png', 'Physical Execution'], caption: 'Body-Grounded Actions' },
     ],
-    shared: { image: 'ppt-icons/image53.png', title: 'Semantic action grounding', detail: 'Each system maps a semantic intervention into an environment-valid action.' },
+    shared: { image: 'ppt-icons/image53.png', title: 'Semantic Action Grounding', detail: 'Each system maps a semantic intervention into an environment-valid action.' },
     right: [
-      { code: 'MMEA', input: ['ppt-icons/image35.png', 'Task command'], output: ['ppt-icons/image36.png', 'Visible execution state'], caption: 'Task-visible execution' },
-      { code: 'ROBOTICS', input: ['ppt-icons/image37.png', 'Control target'], output: ['ppt-icons/image38.png', 'Local execution state'], caption: 'Controller-local execution' },
+      { code: 'MMEA', input: ['ppt-icons/image35.png', 'Task Command'], output: ['ppt-icons/image36.png', 'Visible Execution State'], caption: 'Task-Visible Execution' },
+      { code: 'ROBOTICS', input: ['ppt-icons/image37.png', 'Control Target'], output: ['ppt-icons/image38.png', 'Local Execution State'], caption: 'Controller-Local Execution' },
     ],
   },
   {
     letter: 'V', name: 'Verify', color: '#7564BC',
     left: [
-      { code: 'MMA', input: ['ppt-icons/image43.png', 'Structured state'], output: ['ppt-icons/image44.png', 'Functional verdict'], caption: 'Structured digital verdicts' },
-      { code: 'MMEA', input: ['ppt-icons/image39.png', 'Physical evidence'], output: ['ppt-icons/image45.png', 'Calibrated verdict'], caption: 'Calibrated physical verdicts' },
+      { code: 'MMA', input: ['ppt-icons/image43.png', 'Structured State'], output: ['ppt-icons/image44.png', 'Function Assessment'], caption: 'Structured Digital Verdicts' },
+      { code: 'MMEA', input: ['ppt-icons/image39.png', 'Physical Evidence'], output: ['ppt-icons/image45.png', 'Calibrated Result'], caption: 'Calibrated Physical Verdicts' },
     ],
-    shared: { image: 'ppt-icons/image54.png', title: 'Evidence-grounded verification', detail: 'Each system compares observed and expected outcomes to form corrective feedback.' },
+    shared: { image: 'ppt-icons/image54.png', title: 'Evidence-Grounded Verification', detail: 'Each system compares observed and expected outcomes to form corrective feedback.' },
     right: [
-      { code: 'MMEA', input: ['ppt-icons/image46.png', 'Physical verdict'], output: ['ppt-icons/image47.png', 'Task state update'], caption: 'Task-level verdicts' },
-      { code: 'ROBOTICS', input: ['ppt-icons/image48.png', 'Monitor verdict'], output: ['ppt-icons/image49.png', 'Skill state update'], caption: 'Skill-local verdicts' },
+      { code: 'MMEA', input: ['ppt-icons/image46.png', 'Physical Result'], output: ['ppt-icons/image47.png', 'State Update'], caption: 'Skill-Local Verdicts' },
+      { code: 'ROBOTICS', input: ['ppt-icons/image48.png', 'Monitor Result'], output: ['ppt-icons/image49.png', 'Skill State Update'], caption: 'Skill-Local Verdicts' },
     ],
   },
 ];
