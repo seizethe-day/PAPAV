@@ -60,6 +60,7 @@ const comparisons: Array<{
     ],
   },
   {
+    // ACT intentionally uses the same icon-card renderer as every other capability.
     letter: 'A', name: 'Act', color: '#347FB8',
     left: [
       { code: 'MMA', input: ['ppt-icons/image31.png', 'Semantic Intent'], output: ['ppt-icons/image32.png', 'Interface Event'], caption: 'Interface-Level Actions' },
