@@ -15,8 +15,6 @@ const comparisons: Array<{
   color: string;
   leftNote?: string;
   rightNote?: string;
-  panelImage?: string;
-  panelAlt?: string;
   left: [Flow, Flow];
   shared: { image: string; title: string; detail: string };
   right: [Flow, Flow];
@@ -63,8 +61,6 @@ const comparisons: Array<{
   },
   {
     letter: 'A', name: 'Act', color: '#347FB8',
-    panelImage: 'act-comparison-latest.png',
-    panelAlt: 'ACT comparison across multimodal agents, multimodal embodied agents, shared capabilities, and robotic systems',
     left: [
       { code: 'MMA', input: ['ppt-icons/image31.png', 'Semantic Intent'], output: ['ppt-icons/image32.png', 'Interface Event'], caption: 'Interface-Level Actions' },
       { code: 'MMEA', input: ['ppt-icons/image33.png', 'Semantic Intent'], output: ['ppt-icons/image34.png', 'Physical Execution'], caption: 'Body-Grounded Actions' },
@@ -120,43 +116,19 @@ export default function SimilarityDifference() {
         ))}
       </div>
 
-      {item.panelImage ? (
-        <div
-          key={item.name}
-          style={{
-            overflowX: 'auto',
-            padding: 'clamp(10px, 1.2vw, 18px)',
-            border: '1px solid #aeb9b6',
-            borderTop: 0,
-            background: '#f7f9f6',
-            animation: 'comparison-in .38s ease both',
-          }}
-        >
-          <figure style={{ minWidth: '1050px', margin: 0 }}>
-            <img
-              src={item.panelImage}
-              alt={item.panelAlt}
-              width="3429"
-              height="584"
-              style={{ display: 'block', width: '100%', height: 'auto' }}
-            />
-          </figure>
-        </div>
-      ) : (
-        <div className="triptych-visual" key={item.name} style={{ '--capability': item.color } as CSSProperties}>
-          <ComparisonColumn label="Difference from MMA" note={item.leftNote ?? 'Digital → physical evidence and action'} flows={item.left} side="left" />
+      <div className="triptych-visual" key={item.name} style={{ '--capability': item.color } as CSSProperties}>
+        <ComparisonColumn label="Difference from MMA" note={item.leftNote ?? 'Digital → physical evidence and action'} flows={item.left} side="left" />
 
-          <article className="shared-capability">
-            <header><span>Similarity</span><strong>Shared capability</strong></header>
-            <div className="shared-artwork"><img src={item.shared.image} alt="" /></div>
-            <small>{item.letter} · {item.name}</small>
-            <h3>{item.shared.title}</h3>
-            <p>{item.shared.detail}</p>
-          </article>
+        <article className="shared-capability">
+          <header><span>Similarity</span><strong>Shared capability</strong></header>
+          <div className="shared-artwork"><img src={item.shared.image} alt="" /></div>
+          <small>{item.letter} · {item.name}</small>
+          <h3>{item.shared.title}</h3>
+          <p>{item.shared.detail}</p>
+        </article>
 
-          <ComparisonColumn label="Difference from Robotics" note={item.rightNote ?? 'Supplied control → task-formed agency'} flows={item.right} side="right" />
-        </div>
-      )}
+        <ComparisonColumn label="Difference from Robotics" note={item.rightNote ?? 'Supplied control → task-formed agency'} flows={item.right} side="right" />
+      </div>
 
       <div className="triptych-reading" aria-label="How to read the comparison">
         <span>Reading guide</span>
