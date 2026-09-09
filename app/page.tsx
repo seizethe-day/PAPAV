@@ -42,7 +42,7 @@ export default function Home() {
         <div className="nav-links">
           <a href="#framework">Framework</a>
           <a href="#abstract">Abstract</a>
-          <a href="#comparison">Compare</a>
+          <a href="#comparison">Comparison</a>
           <a href="#benchmarks">Benchmarks</a>
           <a href="#challenges">Challenges</a>
         </div>
