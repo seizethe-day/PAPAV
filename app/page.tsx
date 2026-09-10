@@ -90,8 +90,8 @@ export default function Home() {
         <img
           src="papav-teaser.webp"
           width="2048"
-          height="820"
-          alt="Ten illustrations showing the Perceive, Anticipate, Plan, Act, and Verify stages in digital and embodied settings"
+          height="844"
+          alt="Five PAPAV capability columns, Perceive, Anticipate, Plan, Act, and Verify, each pairing a digital interface illustration with an embodied robot illustration"
         />
         <figcaption id="teaser-caption">
           This illustration presents the five-stage PAPAV framework, in which an embodied agent perceives the environment, anticipates potential failures, plans an appropriate action sequence, executes the task, and verifies the outcome.
