@@ -178,9 +178,9 @@ h1 { margin: 0; letter-spacing: -.045em; }
 .abstract-copy { align-self: center; padding: 28px 0; border-top: 1px solid rgba(255,255,255,.18); border-bottom: 1px solid rgba(255,255,255,.18); }
 .abstract-copy p { margin: 0; color: #cfdbdd; font-size: var(--type-body); line-height: 1.68; }
 .abstract-copy p + p { margin-top: 17px; }
-.teaser-section { margin: 0; scroll-margin-top: 68px; background: #172a32; }
+.teaser-section { margin: 0; padding: 104px clamp(24px,7vw,108px); scroll-margin-top: 68px; background: #fff; }
 .teaser-section img { display: block; width: 100%; height: auto; }
-.teaser-section figcaption { margin: 0; padding: 32px clamp(24px,2.25vw,44px) 36px; color: #f2f5f4; background: #172a32; font: 400 clamp(18px,1.7vw,32px)/1.42 var(--font-ui); letter-spacing: -.015em; }
+.teaser-section figcaption { margin: 20px 0 0; color: var(--muted); font: 400 var(--type-lead)/1.68 var(--font-ui); }
 
 .section-heading-row, .benchmark-intro { display: grid; grid-template-columns: 1.08fr .92fr; gap: clamp(48px,7vw,108px); align-items: end; }
 .section-heading-row h2, .benchmark-intro h2, .domains-copy h2, .challenge-title-wrap h2 { margin: 25px 0 0; font: 400 var(--type-section)/1.06 var(--font-display); letter-spacing: -.04em; }
@@ -811,6 +811,7 @@ footer > a:last-child { justify-self: end; }
   .capability-cards { grid-template-columns: 1fr; margin-top: 50px; }
   .capability-cards article, .capability-cards article:last-child { grid-column: auto; min-height: 315px; }
   .cap-letter { margin-top: 35px; }
+  .teaser-section { padding: 70px 22px; }
   .comparison-section { padding: 86px 22px 96px; }
   .comparison-tabs { display: flex; overflow-x: auto; margin-top: 50px; }
   .comparison-tabs button { min-width: 155px; }

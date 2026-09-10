@@ -86,6 +86,18 @@ export default function Home() {
         <HeroCapabilityOrbit capabilities={capabilities} />
       </section>
 
+      <figure className="teaser-section" id="framework" aria-labelledby="teaser-caption">
+        <img
+          src="papav-teaser.webp"
+          width="2048"
+          height="820"
+          alt="Ten illustrations showing the Perceive, Anticipate, Plan, Act, and Verify stages in digital and embodied settings"
+        />
+        <figcaption id="teaser-caption">
+          This illustration presents the five-stage PAPAV framework, in which an embodied agent perceives the environment, anticipates potential failures, plans an appropriate action sequence, executes the task, and verifies the outcome.
+        </figcaption>
+      </figure>
+
       <section className="abstract-section" id="abstract">
         <div>
           <p className="section-kicker">Abstract</p>
@@ -97,18 +109,6 @@ export default function Home() {
           <p>Defined by function rather than architecture, these capabilities let PAPAV identify what all three share and then compare MMEAs with MMAs and with RSs. Five physical constraints, from partial observability to unverifiable outcomes, leave fewer choices fixed in advance and less room to reverse errors. Across 64 benchmarks, explicit evaluation centers on Act; only 5 assess Anticipate and 3 assess Verify, leaving both largely hidden behind task success. These constraints also frame the open challenges we identify. PAPAV therefore provides a common basis for designing reliable physical agents and measuring progress across the full interaction loop.</p>
         </div>
       </section>
-
-      <figure className="teaser-section" id="framework" aria-labelledby="teaser-caption">
-        <img
-          src="papav-teaser.webp"
-          width="5200"
-          height="2084"
-          alt="Ten illustrations showing the Perceive, Anticipate, Plan, Act, and Verify stages in digital and embodied settings"
-        />
-        <figcaption id="teaser-caption">
-          This illustration presents the five-stage PAPAV framework, in which an embodied agent perceives the environment, anticipates potential failures, plans an appropriate action sequence, executes the task, and verifies the outcome.
-        </figcaption>
-      </figure>
 
       <SimilarityDifference />
 
